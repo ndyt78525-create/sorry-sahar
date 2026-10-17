@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff0f5">
+<title>برای سحر من ♡</title>
+<style>
+:root{--pink:#ff8fb1;--rose:#e94f83;--ink:#593346;--cream:#fff8fb;--lav:#f3eaff}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:Tahoma,"Vazirmatn",sans-serif;color:var(--ink);background:radial-gradient(circle at 15% 10%,#ffe0eb,transparent 35%),radial-gradient(circle at 90% 80%,#e9dcff,transparent 35%),var(--cream);overflow-x:hidden}
+main{width:min(720px,92%);margin:0 auto;padding:28px 0 54px;position:relative;z-index:1}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:.9rem;color:#9a647c}
+.pill{border:1px solid #f4c7d8;border-radius:999px;padding:8px 12px;background:#ffffffb8}
+.hero{text-align:center;padding:44px 12px 24px}
+.eyebrow{color:var(--rose);font-size:.95rem;letter-spacing:.3px}
+h1{font-size:clamp(2rem,8vw,3.4rem);margin:12px 0;color:#c93e72}
+.subtitle{font-size:1.05rem;line-height:2;max-width:520px;margin:0 auto;color:#85576c}
+.heart{font-size:3rem;display:inline-block;animation:beat 1.5s infinite;filter:drop-shadow(0 6px 12px #e94f8340)}
+@keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.16)}30%{transform:scale(1)}45%{transform:scale(1.1)}}
+.card{background:#ffffffd9;border:1px solid #f7d4e1;box-shadow:0 18px 50px #b94c7415;border-radius:28px;padding:clamp(20px,5vw,34px);margin:18px 0;text-align:center;backdrop-filter:blur(8px)}
+.progress{height:6px;background:#f8dce7;border-radius:99px;overflow:hidden;margin:0 0 22px}
+#bar{height:100%;width:20%;background:linear-gradient(90deg,#ffb2cb,#df4e83);border-radius:99px;transition:width .35s}
+.step-label{font-size:.85rem;color:#bd6586;margin-bottom:8px}
+h2{font-size:clamp(1.35rem,5vw,1.8rem);margin:8px 0 14px}
+.story{font-size:1.05rem;line-height:2.15;white-space:pre-line;min-height:130px}
+.note{font-size:.9rem;color:#9c7284;line-height:1.9}
+.actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+button{font:inherit;border:0;border-radius:999px;padding:13px 21px;cursor:pointer;transition:transform .15s,box-shadow .15s}
+button:active{transform:scale(.97)}
+.primary{color:white;background:linear-gradient(135deg,#f47ca3,#d94379);box-shadow:0 8px 20px #df4e8335}
+.secondary{color:#b83e70;background:#fff0f6;border:1px solid #f4c5d7}
+button:focus-visible{outline:3px solid #7f3f9c;outline-offset:3px}
+.photo-slot{border:2px dashed #f0b6cc;background:#fff8fb;border-radius:20px;padding:24px 14px;margin:18px 0;color:#a65e7c;line-height:1.9}
+.photo-slot .emoji{font-size:2rem}
+.photo-slot input{display:block;margin:12px auto 0;max-width:100%;font:inherit;font-size:.85rem}
+#preview{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:12px}
+#preview img{width:min(44%,180px);aspect-ratio:3/4;object-fit:cover;border-radius:16px;border:3px solid white;box-shadow:0 5px 20px #b94c7420}
+.musicbar{display:flex;justify-content:center;align-items:center;gap:10px;margin:20px 0;color:#9c647b;font-size:.9rem}
+.musicbar button{padding:10px 15px}
+footer{text-align:center;font-size:.85rem;line-height:2;color:#a17b8c;padding:20px}
+.float-heart{position:fixed;bottom:-40px;z-index:0;pointer-events:none;opacity:0;animation:floatUp linear forwards;color:#ee78a0}
+@keyframes floatUp{0%{transform:translateY(0) rotate(0deg);opacity:0}12%{opacity:.7}100%{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+.smallprint{font-size:.8rem;color:#a17b8c}
+@media(max-width:420px){main{width:94%;padding-top:16px}.hero{padding-top:32px}.card{border-radius:23px}.story{font-size:1rem;min-height:150px}.top{font-size:.78rem}}
+</style>
+</head>
+<body>
+<main>
+  <div class="top"><span class="pill">یک نامه‌ی کوچیک ♡</span><span>برای سحر، با عشق</span></div>
+  <header class="hero">
+    <div class="heart" aria-hidden="true">♡</div>
+    <div class="eyebrow">از طرف کسی که دوستت داره</div>
+    <h1>سحرِ من…</h1>
+    <p class="subtitle">چند تا حرف توی دلم مونده. اینجا نوشتمشون؛ نه برای اینکه مجبور به چیزی بشی، فقط برای اینکه حرفم رو صادقانه بشنوی.</p>
+  </header>
+
+  <section class="card" aria-live="polite">
+    <div class="progress"><div id="bar"></div></div>
+    <div class="step-label" id="stepLabel">قصه‌ی ما · ۱ از ۵</div>
+    <h2 id="title">اول از همه…</h2>
+    <div class="story" id="story">سحر جان، می‌دونم ناراحتت کردم و دلت رو شکستم. نمی‌خوام با چند تا جمله وانمود کنم که درد و ناراحتی‌ات کوچیکه.</div>
+    <div class="actions">
+      <button class="secondary" id="back" hidden>قبلی</button>
+      <button class="primary" id="next">حرف بعدی رو بخون ♡</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>چند قاب از خاطره‌هامون 📷</h2>
+    <p class="note">فعلاً اینجا جا برای عکس‌های واقعی خودمونه. عکس‌ها رو انتخاب کن تا فقط روی همین صفحه پیش‌نمایش داده بشن؛ برای قرار گرفتن داخل لینک نهایی، بعداً باید فایل‌ها رو کنار سایت بذاریم.</p>
+    <div class="photo-slot">
+      <div class="emoji">🌷 💗 🌷</div>
+      <div>عکس‌های تو و من، وقتی آماده بودی</div>
+      <input id="photos" type="file" accept="image/*" multiple aria-label="انتخاب عکس‌های خاطره">
+      <div id="preview"></div>
+    </div>
+  </section>
+
+  <div class="musicbar">
+    <button class="secondary" id="musicBtn" aria-pressed="false">♫ پخش موسیقی</button>
+    <span id="musicStatus">برای موسیقی، فایل خودت رو اضافه کن</span>
+  </div>
+  <p class="smallprint" style="text-align:center">برای اضافه‌کردن آهنگ: یک فایل مجاز مثل <b>song.mp3</b> کنار همین فایل HTML قرار بده.</p>
+  <audio id="audio" loop preload="none"><source src="song.mp3" type="audio/mpeg"></audio>
+  <footer>قرار نیست این صفحه جواب همه‌چیز باشه؛ فقط تلاشی کوچیکه برای گفتنِ «متأسفم» با صداقت. ♡<br>با احترام به دل و زمان تو.</footer>
+</main>
+<script>
+const pages = [
+ {title:"اول از همه…", text:"سحر جان، می‌دونم ناراحتت کردم و دلت رو شکستم. نمی‌خوام با چند تا جمله وانمود کنم که درد و ناراحتی‌ات کوچیکه."},
+ {title:"مسئولیتش با منه", text:"اشتباه من رو نمی‌خوام توجیه کنم یا تقصیر رو گردن شرایط بندازم. حق داری ناراحت باشی و احساساتت برام مهمه."},
+ {title:"می‌دونم حرف کافی نیست", text:"می‌دونم گفتنِ «ببخشید» به‌تنهایی چیزی رو درست نمی‌کنه. اگر قراره چیزی بهتر بشه، باید توی رفتارم نشون بدم که حرفت رو فهمیدم و برای اعتماد تو ارزش قائلم."},
+ {title:"هیچ عجله‌ای نیست", text:"از تو انتظار ندارم همین الان منو ببخشی یا حست رو عوض کنی. به زمان و فضای تو احترام می‌ذارم؛ لازم نیست برای آروم‌کردن من، ناراحتی خودت رو کنار بذاری."},
+ {title:"حرف آخرم… ♡", text:"دوستت دارم، سحر. متأسفم که باعث رنجشت شدم. اگر روزی آماده بودی، با دلِ باز به حرف‌هات گوش می‌دم و سعی می‌کنم با عملم نشون بدم که این رابطه و دل تو برام مهمه. ♡"}
+];
+let current=0;
+const title=document.getElementById('title'), story=document.getElementById('story'), label=document.getElementById('stepLabel'), bar=document.getElementById('bar'), next=document.getElementById('next'), back=document.getElementById('back');
+function render(){
+ const p=pages[current]; title.textContent=p.title; story.textContent=p.text;
+ label.textContent=`قصه‌ی ما · ${current+1} از ${pages.length}`;
+ bar.style.width=((current+1)/pages.length*100)+'%';
+ back.hidden=current===0;
+ next.textContent=current===pages.length-1?'از اول بخون ♡':'حرف بعدی رو بخون ♡';
+}
+next.addEventListener('click',()=>{current=current===pages.length-1?0:current+1;render();});
+back.addEventListener('click',()=>{current=Math.max(0,current-1);render();});
+const audio=document.getElementById('audio'), musicBtn=document.getElementById('musicBtn'), musicStatus=document.getElementById('musicStatus');
+musicBtn.addEventListener('click',async()=>{
+ if(audio.paused){
+  try{await audio.play();musicBtn.textContent='Ⅱ توقف موسیقی';musicBtn.setAttribute('aria-pressed','true');musicStatus.textContent='موسیقی در حال پخشه ♡';}
+  catch(e){musicStatus.textContent='فایل song.mp3 رو کنار index.html بذار تا پخش بشه.';}
+ }else{audio.pause();musicBtn.textContent='♫ پخش موسیقی';musicBtn.setAttribute('aria-pressed','false');musicStatus.textContent='موسیقی متوقف شد';}
+});
+document.getElementById('photos').addEventListener('change',e=>{
+ const preview=document.getElementById('preview');preview.replaceChildren();
+ [...e.target.files].slice(0,8).forEach(file=>{if(!file.type.startsWith('image/'))return;const img=document.createElement('img');img.alt='پیش‌نمایش عکس خاطره';img.src=URL.createObjectURL(file);preview.appendChild(img);});
+});
+function floatHeart(){
+ const el=document.createElement('span');el.className='float-heart';el.textContent=['♡','♥','ღ','✧'][Math.floor(Math.random()*4)];
+ el.style.left=Math.random()*100+'vw';el.style.fontSize=(14+Math.random()*20)+'px';el.style.animationDuration=(7+Math.random()*7)+'s';
+ document.body.appendChild(el);setTimeout(()=>el.remove(),14500);
+}
+setInterval(floatHeart,900);
+render();
+</script>
+</body>
+</html>
